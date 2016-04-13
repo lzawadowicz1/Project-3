@@ -19,8 +19,8 @@ body {
   position: fixed;
   z-index: 2;
 }
-#splat,
-#clear {
+#splat-button,
+#clear-button {
   width: 800px;
   height: 100px;
   margin-top: 1280px;
@@ -38,9 +38,32 @@ button:active {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5) inset, 0px -2px 20px white, 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
   background: -webkit-linear-gradient(top, #d1d1d1 0%, #ECECEC 100%);
 }
-#splat {
+#splat-button {
   margin-left: 400px;
 }
-#clear {
+#clear-button {
   margin-left: 1300px;
+}
+
+
+#splat-container {
+  width: 70%;
+  height: 18em;
+  background: red;
+  position: fixed;
+  z-index: 0;
+}
+
+.animal {
+  width: 100px;
+  position: absolute;
+  z-index: 1;
+  // we'll get the top and left values from our JS
+
+  // this will vertically and horizontally center our image
+  // but it will not work on all browsers. I'd recommend
+  // finding the width and height of each image and then
+  // setting the margin-top and margin-left to negative
+  // 1/2 those amounts which will work everywhere.
+  transform: translate(-50%, -50%);
 }
