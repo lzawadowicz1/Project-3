@@ -5,24 +5,23 @@ body {
   position: fixed;
   margin: auto;
   padding-top: 65px;
-  padding-left: 350px;
+  padding-left: 550px;
 }
 .background {
-  width: 1800px;
+  width: 1500px;
   position: fixed;
   z-index: -1;
 }
 .foreground {
-  width: 1800px;
+  width: 1500px;
   position: fixed;
   z-index: 2;
 }
 #splat-button,
 #clear-button {
-  width: 800px;
+  width: 600px;
   height: 100px;
-  margin-top: 1280px;
-  margin-left: 200px;
+  margin-top: 1080px;
   font-size: 70px;
   background: #454d0e;
   display: block;
@@ -37,19 +36,19 @@ button:active {
   background: -webkit-linear-gradient(top, #d1d1d1 0%, #ECECEC 100%);
 }
 #splat-button {
-  margin-left: 400px;
+  margin-left: 600px;
 }
 #clear-button {
-  margin-left: 1300px;
+  margin-left: 1400px;
 }
 #splat-container {
-  width: 1500px;
-  height: 50em;
+  width: 1250px;
+  height: 580px;
   background: none;
   position: fixed;
   z-index: 0;
   margin-top: 190px;
-  margin-left: 500px;
+  margin-left: 650px;
 }
 .animal {
   width: 300px;
