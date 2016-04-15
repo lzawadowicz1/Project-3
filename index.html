@@ -5,6 +5,10 @@
     <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
     <script src="Js/main.js" type="text/javascript"></script>
    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+	 <script>
+	 var splat = new Audio();
+	 splat.src="Audio/Splat_sound (mp3cut.net).mp3";
+	 </script>
 	</head>
 	<body>
 
@@ -20,13 +24,11 @@
     </div>
 
 		<div id="button-container">
-		<button id="splat-button">Splat!</button>
+		<button onmousedown="splat.play()" id="splat-button">Splat!</button>
 		<button id="clear-button">Clear</button>
 	  </div>
 
-			<audio src="Audio/car_sound.wav" autoplay loop></audio>
-      <source src="Audio/Splat_sound.m4a"></source>
-
+			<audio src="Audio/car_sound.mp3" autoplay loop></audio>
 
 	</body>
 </html>
