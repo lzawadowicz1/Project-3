@@ -1,16 +1,15 @@
 body {
   background-color: black;
+  font-size: 100px;
 }
 #canvas {
   position: fixed;
-  margin-left: -0.3%;
-  margin-top: -0.3%;
 }
 .background {
   width: 100%;
   position: fixed;
   margin-left: -0.3%;
-  margin-top: -3%;
+  margin-top: -7%;
   z-index: -1;
 }
 .foreground {
@@ -19,19 +18,19 @@ body {
   z-index: 2;
 }
 .mirror {
-  margin-top: -0.5%;
-  margin-left: -1%;
+  margin-top: -2%;
+  margin-left: -2%;
 }
 .dash {
-  margin-top: -3%;
+  margin-top: -5%;
   margin-left: -0.3%;
 }
 #splat-button,
 #clear-button {
   width: 23%;
   height: 10%;
-  margin-top: 54%;
-  font-size: 70px;
+  margin-top: 48%;
+  font-size: 100%;
   background: #ff4f00;
   display: block;
   font-family: sanserif;
@@ -63,4 +62,120 @@ button:active {
   position: absolute;
   z-index: 1;
   transform: translate(-50%, -50%);
+}
+/* iPhone Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  #canvas {
+    display: none;
+  }
+  #splat-button,
+  #clear-button {
+    display: none;
+  }
+  #splat-container {
+    display: none;
+  }
+}
+/* iPhone Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  #canvas {
+    margin-left: -0.6%;
+    margin-top: -0.3%;
+  }
+  .background {
+    margin-top: -5%;
+  }
+  .mirror {
+    margin-top: -1.8%;
+    margin-left: -2%;
+  }
+  .dash {
+    margin-top: -5%;
+    margin-left: -0.3%;
+  }
+  #splat-button,
+  #clear-button {
+    width: 25%;
+    height: 18%;
+    margin-top: 44%;
+    font-size: 70%;
+  }
+  #splat-button {
+    margin-left: 45%;
+  }
+  #clear-button {
+    margin-left: 72%;
+  }
+}
+/* iPad Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #canvas {
+    display: none;
+  }
+  #splat-button,
+  #clear-button {
+    display: none;
+  }
+  #splat-container {
+    display: none;
+  }
+}
+/* iPad Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .background {
+    height: 100%;
+    margin-left: -0.8%;
+  }
+  .mirror {
+    margin-left: -2%;
+  }
+  .dash {
+    margin-top: 8.5%;
+    margin-left: -0.8%;
+  }
+  #splat-button,
+  #clear-button {
+    width: 26%;
+    height: 13%;
+    margin-top: 60%;
+    font-size: 70%;
+  }
+  #splat-button {
+    margin-left: 45%;
+  }
+  #clear-button {
+    margin-left: 72%;
+  }
+}
+/* Laptop */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  #canvas {
+    margin-left: -0.3%;
+    margin-top: -0.3%;
+  }
+  .background {
+    margin-left: -0.3%;
+    margin-top: -3%;
+  }
+  .mirror {
+    margin-top: -0.5%;
+    margin-left: -1%;
+  }
+  .dash {
+    margin-top: -3%;
+    margin-left: -0.3%;
+  }
+  #splat-button,
+  #clear-button {
+    width: 23%;
+    height: 13%;
+    margin-top: 47%;
+    font-size: 65%;
+  }
+  #splat-button {
+    margin-left: 48%;
+  }
+  #clear-button {
+    margin-left: 73%;
+  }
 }
