@@ -63,6 +63,9 @@ button:active {
   z-index: 1;
   transform: translate(-50%, -50%);
 }
+#rotate {
+  display: none;
+}
 /* iPhone Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   #canvas {
@@ -74,6 +77,12 @@ button:active {
   }
   #splat-container {
     display: none;
+  }
+  #rotate {
+    display: block;
+    width: 200%;
+    margin-left: -35%;
+    margin-top: 30%;
   }
 }
 /* iPhone Landscape */
@@ -118,6 +127,11 @@ button:active {
   }
   #splat-container {
     display: none;
+  }
+  #rotate {
+    display: block;
+    width: 470%;
+    margin-left: -70%;
   }
 }
 /* iPad Landscape */
