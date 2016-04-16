@@ -15,7 +15,7 @@
         // creates a new image element using a javascript variable
         // so that we can target it and apply some css to the
         // image before it gets appended to #animals-container
-        var animal = $("<img class='animal cat' src='Images/splat_1.png'>");
+        var animal = $("<img class='animal' src='Images/splat_1.png'>");
 
         // applies some css to the animal image before it gets
         // appended to #animals-container.
@@ -40,7 +40,7 @@
       } else if (animalLoop === 2) {
 
         // appends the image to the #animals-container div
-        var animal = $("<img class='animal dog' src='Images/splat_2.png'>");
+        var animal = $("<img class='animal' src='Images/splat_2.png'>");
 
         // applies some css to the animal image before it gets
         // appended to #animals-container.
@@ -66,7 +66,7 @@
       } else {
 
         // appends the image to the #animals-container div
-        var animal = $("<img class='animal mouse' src='Images/splat_3.png'>");
+        var animal = $("<img class='animal' src='Images/splat_3.png'>");
 
         // applies some css to the animal image before it gets
         // appended to #animals-container.
