@@ -92,4 +92,9 @@
       location.reload();
        });
 
+       $("#splat-button").click( function() {
+    var click = new Audio("Audio/Splat_sound (mp3cut.net).mp3");
+    click.play()
+});
+
   });
